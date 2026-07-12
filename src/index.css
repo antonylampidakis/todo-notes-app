@@ -1,0 +1,113 @@
+:root {
+  font-family:
+    Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+  color-scheme: light;
+
+  --background: #f3f5f9;
+  --background-accent: rgba(79, 70, 229, 0.1);
+
+  --surface: #ffffff;
+  --surface-secondary: #f8fafc;
+  --surface-hover: #eef2f7;
+
+  --header-start: #182033;
+  --header-end: #312e81;
+
+  --text-primary: #172033;
+  --text-secondary: #5e687a;
+  --text-muted: #8b95a6;
+
+  --accent: #4f46e5;
+  --accent-hover: #4338ca;
+  --accent-soft: #eef2ff;
+
+  --success: #16865c;
+  --danger: #d14343;
+
+  --border: #e1e6ee;
+  --input-border: #d5dce7;
+  --input-background: #ffffff;
+  --checkbox-border: #aab4c3;
+  --placeholder: #9ca5b3;
+  --badge-background: #e8edf4;
+  --focus-ring: rgba(79, 70, 229, 0.15);
+
+  --shadow:
+    0 18px 40px rgba(25, 35, 55, 0.08),
+    0 3px 10px rgba(25, 35, 55, 0.04);
+
+  --small-shadow: 0 4px 14px rgba(25, 35, 55, 0.06);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+
+  --background: #0e1320;
+  --background-accent: rgba(99, 102, 241, 0.13);
+
+  --surface: #171e2d;
+  --surface-secondary: #1d2636;
+  --surface-hover: #273247;
+
+  --header-start: #101625;
+  --header-end: #27245d;
+
+  --text-primary: #edf1f7;
+  --text-secondary: #b0bac9;
+  --text-muted: #7f8a9d;
+
+  --accent: #7770f6;
+  --accent-hover: #8983ff;
+  --accent-soft: rgba(119, 112, 246, 0.15);
+
+  --success: #45c993;
+  --danger: #ff7373;
+
+  --border: #2b3547;
+  --input-border: #3b465a;
+  --input-background: #151c2a;
+  --checkbox-border: #667187;
+  --placeholder: #717d91;
+  --badge-background: #2d384b;
+  --focus-ring: rgba(119, 112, 246, 0.18);
+
+  --shadow:
+    0 18px 45px rgba(0, 0, 0, 0.22),
+    0 3px 12px rgba(0, 0, 0, 0.14);
+
+  --small-shadow: 0 4px 14px rgba(0, 0, 0, 0.16);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 320px;
+  min-height: 100%;
+  background: var(--background);
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+}
+
+button,
+input,
+textarea {
+  font-family: inherit;
+}
+
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}

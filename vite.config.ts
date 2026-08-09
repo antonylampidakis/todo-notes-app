@@ -3,7 +3,7 @@ import react from "@vitejs/plugin-react";
 import { VitePWA } from "vite-plugin-pwa";
 
 export default defineConfig({
-  base: "/todo-notes-app/",
+  base: "/",
 
   plugins: [
     react(),
@@ -27,8 +27,10 @@ export default defineConfig({
         background_color: "#0e1320",
         display: "standalone",
         orientation: "any",
-        start_url: ".",
-        scope: ".",
+
+        start_url: "/",
+        scope: "/",
+
         lang: "el",
         dir: "ltr",
 

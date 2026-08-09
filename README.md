@@ -1,32 +1,104 @@
-# React + TypeScript + Vite
+# Tasks & Notes
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Το **Tasks & Notes** είναι μια web εφαρμογή προσωπικής οργάνωσης για τη
+διαχείριση εργασιών, σημειώσεων, συμβάντων και ημερολογίου μέσα από ένα
+ενιαίο περιβάλλον.
 
-Currently, two official plugins are available:
+Η εφαρμογή έχει σχεδιαστεί ώστε να προσφέρει έναν απλό και οργανωμένο
+τρόπο παρακολούθησης καθημερινών υποχρεώσεων και σημειώσεων.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🌐 Live εφαρμογή
 
-## React Compiler
+Η εφαρμογή είναι διαθέσιμη στο:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+https://tasks.antonylampidakis.com/
 
-## Expanding the Oxlint configuration
+## ✨ Δυνατότητες
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+-   Δημιουργία και διαχείριση εργασιών
+-   Παρακολούθηση ενεργών και ολοκληρωμένων εργασιών
+-   Εντοπισμός εκπρόθεσμων εργασιών
+-   Δημιουργία και διαχείριση σημειώσεων
+-   Ημερολόγιο με προβολή ανά ημέρα και μήνα
+-   Καταχώρηση συμβάντων στο ημερολόγιο
+-   Συγκεντρωτικά στατιστικά στην αρχική οθόνη
+-   Light / Dark mode
+-   Responsive σχεδιασμός για διαφορετικά μεγέθη οθόνης
+-   PWA υποστήριξη
+-   Αυτόματη ενημέρωση της εφαρμογής μέσω Service Worker
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+## 🛠️ Τεχνολογίες
+
+-   React
+-   TypeScript
+-   Vite
+-   Vite PWA Plugin
+-   HTML / CSS
+-   GitHub Actions
+-   GitHub Pages
+
+## 📱 Progressive Web App
+
+Το Tasks & Notes υποστηρίζει λειτουργίες **Progressive Web App (PWA)**.
+
+Μπορεί να εγκατασταθεί σε συμβατές συσκευές και browsers και να
+λειτουργεί περισσότερο σαν αυτόνομη εφαρμογή αντί για μια απλή
+ιστοσελίδα.
+
+## 🚀 Deployment
+
+Το project φιλοξενείται μέσω **GitHub Pages**.
+
+Το deployment πραγματοποιείται αυτόματα μέσω **GitHub Actions** μετά από
+αλλαγές στον κώδικα.
+
+### Production URL
+
+https://tasks.antonylampidakis.com/
+
+## 💻 Τοπική εκτέλεση
+
+Για τοπική εκτέλεση του project:
+
+``` bash
+git clone https://github.com/antonylampidakis/todo-notes-app.git
+cd todo-notes-app
+npm install
+npm run dev
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+Στη συνέχεια άνοιξε τη διεύθυνση που εμφανίζει το Vite στο terminal.
+
+## 📦 Production Build
+
+``` bash
+npm run build
+```
+
+## 📂 Βασική δομή
+
+``` text
+todo-notes-app/
+├── .github/
+│   └── workflows/
+├── public/
+├── src/
+├── index.html
+├── package.json
+├── tsconfig.json
+├── vite.config.ts
+└── README.md
+```
+
+## 🎯 Σκοπός
+
+Το Tasks & Notes δημιουργήθηκε ως προσωπικό project με στόχο την
+ανάπτυξη μιας πρακτικής εφαρμογής καθημερινής οργάνωσης και παράλληλα
+την εξάσκηση στην ανάπτυξη σύγχρονων web εφαρμογών με React και
+TypeScript.
+
+## 👤 Developer
+
+**Antonis Lampidakis**
+
+GitHub: https://github.com/antonylampidakis
